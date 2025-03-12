@@ -1,20 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 import SingleProduct from './Componentes/SingleProduct/SingleProduct'
 import ProductListing from './Componentes/ProductListing/ProductListing'
-import Cart from './Componentes/Cart/Cart'
+import Cart from './Componentes/Cart/Cart';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
       
-      <ProductListing />
-      <SingleProduct />
-      <Cart />
+      <Router>
+      <Routes>
+        <Route path="/" element={<ProductListing />} />
+        <Route path="/product/:id" element={<SingleProduct />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+    </Router>
+    {/* <Cart></Cart> */}
     </>
 
     
