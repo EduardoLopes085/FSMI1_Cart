@@ -17,7 +17,7 @@ app.get('/', (req, res)=>{
 
 
 app.get("/produtos", async (req, res) => {
-    const produtos = await prisma.filme.findMany();
+    const produtos = await prisma.produtos.findMany();
     res.json(produtos)
 })
 
