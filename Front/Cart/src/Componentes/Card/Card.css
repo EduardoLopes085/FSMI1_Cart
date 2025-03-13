@@ -1,0 +1,13 @@
+.single-product {
+    width: 13rem;
+    border: 1px solid red;
+    background-color: lightgray;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    margin: 4rem;
+       
+}
+
+.single-product img {
+    width: 80%;
+}
