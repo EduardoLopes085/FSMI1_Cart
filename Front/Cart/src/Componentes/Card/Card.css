@@ -6,15 +6,15 @@
     border-radius: 1.5rem;
     margin: 4rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.2s ease; 
+    transition: all 0.2s ease;
 }
 
 .single-product img {
     width: 80%;
 }
 
-.single-product:active {
-    transform: scale(0.98); 
-    box-shadow: none; 
+.single-product:hover { 
+    transform: scale(0.98);
+    box-shadow: none;
     background-color: #ffffff;
 }
