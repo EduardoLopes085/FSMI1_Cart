@@ -1,0 +1,13 @@
+.product-listing {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Cria colunas responsivas */
+    gap: 7rem; /* Espaçamento entre os cards */
+    justify-items: center; /* Centraliza os cards */
+    margin-top: 20px;
+  }
+  

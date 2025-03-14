@@ -1,16 +1,26 @@
-// import './App.css'
-import './assets/styles.css' // O professor tinha recomendado o uso desse estilo
-import {BrowserRouter, Router, Route} from 'react-router-dom'
+
+import './App.css'
+import SingleProduct from './Componentes/SingleProduct/SingleProduct'
+import ProductListing from './Componentes/ProductListing/ProductListing'
+import Cart from './Componentes/Cart/Cart';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <Router>
-          <Route/>
-        </Router>
-      </BrowserRouter>
+      
+      <Router>
+      <Routes>
+        <Route path="/" element={<ProductListing />} />
+        <Route path="/product/:id" element={<SingleProduct />} />
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
+    </Router>
+   
     </>
+
+    
   )
 }
 
