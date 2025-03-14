@@ -14,10 +14,16 @@
     margin-right: 20px;
   }
   
-  .single-product-image img {
-    max-width: 200px;
-    border-radius: 8px;
-  }
+  .single-product img {
+    width: 80%;
+    height: 150px; 
+    object-fit: contain; 
+}
+
+.single-product h2 {
+    height: 50px; 
+    overflow: hidden; 
+}
   
   .product-title {
     font-size: 1.5em;
