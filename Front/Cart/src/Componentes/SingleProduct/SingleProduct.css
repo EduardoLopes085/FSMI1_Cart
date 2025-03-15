@@ -7,6 +7,7 @@
     border-radius: 8px;
     max-width: 800px;
     margin: 20px auto;
+    background-color: white;
   }
   
   .single-product-details {
@@ -22,6 +23,7 @@
   .product-title {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: #333;
   }
   
   .product-price {
@@ -43,12 +45,13 @@
     padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: #8F8F8F;
     cursor: pointer;
   }
   
   .size-button:hover {
     background-color: #e0e0e0;
+    color: #007bff;
   }
   
   .buy-button {
